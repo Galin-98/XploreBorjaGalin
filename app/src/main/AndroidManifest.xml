@@ -14,6 +14,19 @@
         android:theme="@style/Theme.MyApplication">
 
         <activity
+            android:name=".satelliteImages.SatelliteBigImage"
+            android:exported="false" />
+        <activity
+            android:name=".satelliteImages.RelevantPlaces"
+            android:exported="false" />
+        <activity
+            android:name=".satelliteImages.SatelliteImageResult"
+            android:exported="false" />
+        <activity
+            android:name=".satelliteImages.SatelliteImages"
+            android:exported="false" />
+
+        <activity
             android:name=".news.News"
             android:exported="true" />
 

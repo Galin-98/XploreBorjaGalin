@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".marsPhotos.MarsPhotos"
+    android:background="@drawable/backmars">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="397dp"
+            android:layout_height="69dp"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="25 photos taken by Curisosity yesterday"
+            android:textColor="#F6F2F2"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.052" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="Choose Rover"
+            android:textColor="#E6E6E6"
+            android:textSize="26sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/slider"
+            app:layout_constraintVertical_bias="0.069" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupRover"
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/buttonSearchMars"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+            <Space
+                android:layout_width="14dp"
+                android:layout_height="24dp"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/radioSpirit"
+                android:layout_width="128dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="#CD5A3D"
+                android:checked="false"
+                android:fontFamily="@font/anton"
+                android:text="Spirit"
+                android:textColor="#E1E1E1" />
+
+            <RadioButton
+                android:id="@+id/radioCuriosity"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="#CD5A3D"
+                android:checked="false"
+                android:fontFamily="@font/anton"
+                android:text="Curiosity"
+                android:textColor="#F1EEEE" />
+
+            <RadioButton
+                android:id="@+id/radioOportunnity"
+                android:layout_width="124dp"
+                android:layout_height="wrap_content"
+                android:buttonTint="#CD5A3D"
+                android:checked="false"
+                android:fontFamily="@font/anton"
+                android:text="Opportunity"
+                android:textColor="#F1E6E6" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonSearchMars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:text="Search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.306"
+            app:sliderAnimationDuration="700"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="700"
+            app:sliderIndicatorEnabled="false"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#C56D21"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="3"
+            app:sliderStartAutoCycle="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

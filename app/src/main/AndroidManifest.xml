@@ -24,6 +24,17 @@
             android:exported="true" />
 
         <activity
+            android:name=".marsPhotos.MarsPhotosList"
+            android:exported="false" />
+        <activity
+            android:name=".marsPhotos.MarsPhotos"
+            android:exported="false" />
+
+        <activity
+            android:name=".marsPhotos.MarsPhotoBig"
+            android:exported="false" />
+
+        <activity
             android:name=".satelliteImages.SatelliteBigImage"
             android:exported="false" />
         <activity

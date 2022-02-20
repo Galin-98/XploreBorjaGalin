@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.xplore.asteroids.Asteroids;
 import com.example.xplore.news.News;
 
 
@@ -20,25 +21,25 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ImageView menu1 = findViewById(R.id.menu1);
-        ImageView menu2 = findViewById(R.id.asteroids);
+        ImageView apod = findViewById(R.id.menu1);
+        ImageView asteroids = findViewById(R.id.asteroids);
         ImageView news = findViewById(R.id.news);
         ImageView mars = findViewById(R.id.mars);
-        ImageView menuSatellite = findViewById(R.id.menuSatellite);
+        ImageView Satellite = findViewById(R.id.menuSatellite);
 
 
 
-        menu1.setOnClickListener(new View.OnClickListener() {
+        apod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
             }
         });
 
-        menu2.setOnClickListener(new View.OnClickListener() {
+        asteroids.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent( MainActivity.this , Asteroids.class));
             }
         });
 
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        menuSatellite.setOnClickListener(new View.OnClickListener() {
+        Satellite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

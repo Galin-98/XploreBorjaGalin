@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.xplore.R;
+import com.example.xplore.news.Threads.ThreadNews;
 
 import java.net.MalformedURLException;
 import java.net.URL;

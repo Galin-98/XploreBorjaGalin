@@ -17,6 +17,13 @@
             android:name=".news.News"
             android:exported="true" />
 
+        <activity
+            android:name=".asteroids.Asteroids"
+            android:exported="false" />
+
+        <activity
+            android:name=".asteroids.AsteroidDetails"
+            android:exported="false" />
 
         <activity
             android:name=".MainActivity"

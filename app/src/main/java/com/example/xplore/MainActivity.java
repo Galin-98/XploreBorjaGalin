@@ -10,6 +10,7 @@ import android.widget.ImageView;
 
 import com.example.xplore.asteroids.Asteroids;
 import com.example.xplore.news.News;
+import com.example.xplore.pictureOfTheDay.PictureOfTheDay;
 import com.example.xplore.satelliteImages.SatelliteImages;
 
 
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                startActivity(new Intent( MainActivity.this , PictureOfTheDay.class));
             }
         });
 

@@ -14,6 +14,16 @@
         android:theme="@style/Theme.MyApplication">
 
         <activity
+            android:name=".pictureOfTheDay.PictureOfTheDayFromList"
+            android:exported="false" />
+        <activity
+            android:name=".pictureOfTheDay.PictureOfTheDay7List"
+            android:exported="true" />
+        <activity
+            android:name=".pictureOfTheDay.PictureOfTheDay"
+            android:exported="true" />
+
+        <activity
             android:name=".satelliteImages.SatelliteBigImage"
             android:exported="false" />
         <activity

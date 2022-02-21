@@ -44,7 +44,7 @@ public class ThreadForPictureList extends Thread
             }
 
 
-            URL link = new URL("https://api.nasa.gov/planetary/apod?api_key=qJ0zfwEXsZf7WJ231fFgaTPIdeAbnO4mmV81g6ta&start_date=" + last7Date + "&end_date=" + yesterdayDate);
+            URL link = new URL("https://api.nasa.gov/planetary/apod?api_key=zf7QfMVf4ayz0usZoRPtlQuV9JT5zh0818fygooZ&start_date=" + last7Date + "&end_date=" + yesterdayDate);
             HttpURLConnection connection = (HttpURLConnection) link.openConnection();
             connection.setRequestMethod("GET");
 

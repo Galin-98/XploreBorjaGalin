@@ -31,7 +31,7 @@ public class ThreadLastCuriosityPhotos extends Thread
         String yesterdayDate = LocalDate.now().minusDays(2).format(formatter);
 
         try {
-            URL link = new URL( "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date="+yesterdayDate+"&api_key=qJ0zfwEXsZf7WJ231fFgaTPIdeAbnO4mmV81g6ta");
+            URL link = new URL( "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date="+yesterdayDate+"&api_key=zf7QfMVf4ayz0usZoRPtlQuV9JT5zh0818fygooZ");
             HttpURLConnection connection = (HttpURLConnection) link.openConnection();
             InputStream dataPage = connection.getInputStream();
             InputStreamReader isr = new InputStreamReader(dataPage);

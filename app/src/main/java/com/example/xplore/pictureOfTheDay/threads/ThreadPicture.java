@@ -20,7 +20,7 @@ public class ThreadPicture extends Thread {
 
         try
         {
-            URL link = new URL("https://api.nasa.gov/planetary/apod?api_key=qJ0zfwEXsZf7WJ231fFgaTPIdeAbnO4mmV81g6ta&thumbs=true");
+            URL link = new URL("https://api.nasa.gov/planetary/apod?api_key=zf7QfMVf4ayz0usZoRPtlQuV9JT5zh0818fygooZ&thumbs=true");
             HttpURLConnection connection = (HttpURLConnection) link.openConnection();
             connection.setRequestMethod("GET");
 

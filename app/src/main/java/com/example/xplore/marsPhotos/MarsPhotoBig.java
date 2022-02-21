@@ -17,8 +17,7 @@ public class MarsPhotoBig extends AppCompatActivity {
         String rover = getIntent().getStringExtra("rover");
         int position = getIntent().getIntExtra("position" , 0);
 
-        System.out.println("ROVER ->>> " + rover);
-        System.out.println("POSITION ->>> " + position);
+
         ImageView image = findViewById(R.id.marsBigPhoto);
 
         switch (rover)

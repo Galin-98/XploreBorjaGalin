@@ -39,7 +39,7 @@ public class ThreadSatellite extends Thread
 
                 String date = LocalDate.now().minusYears(countDate).format(formatter);
 
-                URL url = new URL("https://api.nasa.gov/planetary/earth/imagery?lon=" + SatelliteImages.longitude + "&lat=" + SatelliteImages.latitude + "&date=" + date + "&api_key=qJ0zfwEXsZf7WJ231fFgaTPIdeAbnO4mmV81g6ta&dim=0.1");
+                URL url = new URL("https://api.nasa.gov/planetary/earth/imagery?lon=" + SatelliteImages.longitude + "&lat=" + SatelliteImages.latitude + "&date=" + date + "&api_key=zf7QfMVf4ayz0usZoRPtlQuV9JT5zh0818fygooZ&dim=0.1");
 
                 System.out.println(url);
                 HttpURLConnection connection = (HttpURLConnection) url.openConnection();

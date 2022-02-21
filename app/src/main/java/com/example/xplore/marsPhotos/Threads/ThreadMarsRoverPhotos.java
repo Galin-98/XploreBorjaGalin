@@ -40,7 +40,7 @@ public class ThreadMarsRoverPhotos extends Thread
                     while(MarsPhotos.spiritImages.size() < white_Box_test)
                     {
                         String sol = Integer.toString(rdm.nextInt(2208)+ 1);
-                        URL link = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=" + sol + "&api_key=qJ0zfwEXsZf7WJ231fFgaTPIdeAbnO4mmV81g6ta");
+                        URL link = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=" + sol + "&api_key=zf7QfMVf4ayz0usZoRPtlQuV9JT5zh0818fygooZ");
                         HttpURLConnection connection = (HttpURLConnection) link.openConnection();
                         connection.setRequestMethod("GET");
 
@@ -100,14 +100,14 @@ public class ThreadMarsRoverPhotos extends Thread
         else if(MarsPhotos.radioButtonOpportunity.isChecked())
         {
 
-            MarsPhotos.opportunityImages.clear();
+
             //Max Sol = 5111
             try {
-
-                while(MarsPhotos.opportunityImages.size() <= white_Box_test)
+                MarsPhotos.opportunityImages.clear();
+                while(MarsPhotos.opportunityImages.size() < white_Box_test)
                 {
                     String sol = Integer.toString(rdm.nextInt(5111)+ 1);
-                    URL link = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=" + sol + "&api_key=qJ0zfwEXsZf7WJ231fFgaTPIdeAbnO4mmV81g6ta");
+                    URL link = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=" + sol + "&api_key=zf7QfMVf4ayz0usZoRPtlQuV9JT5zh0818fygooZ");
                     HttpURLConnection connection = (HttpURLConnection) link.openConnection();
                     connection.setRequestMethod("GET");
 
@@ -168,13 +168,17 @@ public class ThreadMarsRoverPhotos extends Thread
 
         else if(MarsPhotos.radioButtonCuriosity.isChecked())
         {
+
+
             //Max Sol = 3383
             try {
 
-                while(MarsPhotos.curiosityImages.size() <= white_Box_test)
+                MarsPhotos.curiosityImages.clear();
+                while(MarsPhotos.curiosityImages.size() < white_Box_test)
                 {
-                    String sol = Integer.toString(rdm.nextInt(5111)+ 1);
-                    URL link = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + sol + "&api_key=qJ0zfwEXsZf7WJ231fFgaTPIdeAbnO4mmV81g6ta");
+                    String sol = Integer.toString(rdm.nextInt(3383)+ 1);
+                    URL link = new URL("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=" + sol + "&api_key=zf7QfMVf4ayz0usZoRPtlQuV9JT5zh0818fygooZ");
+                    System.out.println("LINK -> " + link);
                     HttpURLConnection connection = (HttpURLConnection) link.openConnection();
                     connection.setRequestMethod("GET");
 
@@ -207,6 +211,7 @@ public class ThreadMarsRoverPhotos extends Thread
                             String src_image = jsonArray.getJSONObject(i).getString("img_src").replace("http" , "https");
 
                             MarsPhotos.curiosityImages.add(src_image);
+                            MarsPhotos.opportunityImages.add(src_image);
 
                         }
 

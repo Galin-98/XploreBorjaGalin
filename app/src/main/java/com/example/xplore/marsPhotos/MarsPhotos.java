@@ -55,7 +55,7 @@ public class MarsPhotos extends AppCompatActivity {
         threadLastCuriosityPhotos.start();
         try {
             threadLastCuriosityPhotos.join();
-            System.out.println("SIZE -> " + lastCuriosityImages.size());
+
             SliderAdapter sliderAdapter = new SliderAdapter(lastCuriosityImages);
             sliderView.setSliderAdapter(sliderAdapter);
             sliderView.setSliderTransformAnimation(SliderAnimations.DEPTHTRANSFORMATION);
@@ -83,8 +83,6 @@ public class MarsPhotos extends AppCompatActivity {
                     try {
                         thread.join();
 
-                        Log.d("TEST white_boxV value", Integer.toString(ThreadMarsRoverPhotos.white_Box_test));
-                        Log.d("TEST Nº of directions", Integer.toString((spiritImages.size())));
 
 
                     } catch (InterruptedException e) {

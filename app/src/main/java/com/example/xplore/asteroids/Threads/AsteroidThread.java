@@ -35,7 +35,7 @@ public class AsteroidThread extends Thread
         try
         {
             URL link = null;
-            link = new URL("https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=qJ0zfwEXsZf7WJ231fFgaTPIdeAbnO4mmV81g6ta");
+            link = new URL("https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=zf7QfMVf4ayz0usZoRPtlQuV9JT5zh0818fygooZ");
             HttpURLConnection connection = (HttpURLConnection) link.openConnection();
             connection.setRequestMethod("GET");
 
